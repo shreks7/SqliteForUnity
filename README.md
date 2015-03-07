@@ -3,9 +3,12 @@ Sqlite3 for Unity3d with AES encryption
 
 After trying out alot of sqlite3 libs/plugins for Unity3D, I couldn't find any that supported encryption, was free and was easy to use. However there were some good ones out there that I forked and added encrption support to it.
 
+# Can't Wait ?
+Download Unity Packages - [Unity5]()[Unity4.6]()
+
 Quick Facts: 
 - SqliteForUnity3D provides sqlite support for Unity3D (5.0 & 4.6 Pro) with encryption
-- Download project folders to try out the [sample scenes]()
+- Download project folders to try out the sample scenes [Unity5](https://github.com/shreks7/SqliteForUnity3D/tree/master/SqliteForUnity3D-Unity5Project),[Unity4.6Pro](https://github.com/shreks7/SqliteForUnity3D/tree/master/SqliteForUnity3D_4_6_Pro)
 - Support for x86/x64/Android
 - Plugins folder contains SqliteForUnity3D.dll,libsqlite3.so(for Android),sqlite.dll(both x86/x64) with encrpytion support
 
