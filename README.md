@@ -15,14 +15,52 @@ Quick Facts:
 ![alt tag](https://root2games.appspot.com/file/git/sqliteB.png)
 ![alt tag](https://root2games.appspot.com/file/git/sqliteC.png)
 
-# SqliteForUnity3D Plugins
-SqliteForUnity3D is a fork of https://github.com/codecoding/SQLite4Unity3d by [@CodeCoding](https://github.com/codecoding). Its a small wrapper around the great c# library **[sqlite-net](https://github.com/praeclarum/sqlite-net)** by @praeclarum
+# Usage
+Usage is similiar to sqlite-net. Reiterating it here -
+```
+using UnityEngine;
+using System.Collections;
+using SqliteForUnity3D;
+
+public class PStudent {
+	[PrimaryKey]
+	public string Id { get;set; }
+	public string Name { get;set; }
+}
+
+//Creating Tables & Inserting
+var factory = new ConnectionFactory();
+.....
+_connection = factory.Create(dbPath);
+_connection.CreateTable<PStudent> ();
+_connection.Insert(new PStudent{
+    Id = "XYZ",
+    Name = "John"
+});
+
+//This uses Linq Reflections , please avoid using on iOS
+_connection.Table<PStudent> ().Where (x => x.Name == "John").FirstOrDefault ();
+//Instead
+string name = "John";
+_connection.Query<PStudent>(string.Format("select * from PStudent where Name = {0}",name));
+```
+
+### Encryption
+```
+//To lock db
+_connection.SetDbKey(key);
+// To unlock db
+_connection.Key(key);
+```
+
+# SqliteForUnity3D Source
+SqliteForUnity3D is a fork of https://github.com/codecoding/SQLite4Unity3d by [@CodeCoding](https://github.com/codecoding). A wrapper around the great c# client for sqlite - **[sqlite-net](https://github.com/praeclarum/sqlite-net)** by @praeclarum
 
 **x86/x64 Encryption**
 The encryption is based on AES similiar to the one used by https://github.com/rindeal/SQLite3-Encryption (Infact you can use sqlite3.dll by @rindeal too).
 
 *Android Encryption**
-For Android I compiled the sqlite3 src with the encrypton from @rindeal for both armeabi & x886 platform. I have included the source for them [here]().
+For Android I compiled the sqlite3 src with the encrypton from @rindeal for both armeabi & x86 platform. I have included the source for them [here]().
 
 #TODO
 1. To add support for Windows Phone 8.1/8
