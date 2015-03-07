@@ -10,7 +10,7 @@ Download Unity Packages - [Unity 5](https://github.com/shreks7/SqliteForUnity3D/
 - SqliteForUnity3D provides sqlite support for Unity3D (5.0 & 4.6 Pro) with encryption
 - Download project folders to try out the sample scenes [Unity 5](https://github.com/shreks7/SqliteForUnity3D/tree/master/SqliteForUnity3D-Unity5Project),[Unity 4.6 Pro](https://github.com/shreks7/SqliteForUnity3D/tree/master/SqliteForUnity3D_4_6_Pro)
 - Support for x86/x64/Android
-- Plugins folder contains SqliteForUnity3D.dll,libsqlite3.so(for Android),sqlite.dll(both x86/x64) with encrpytion support
+- Plugins folder contains SqliteForUnity3D.dll,libsqlite3.so(for Android),sqlite.dll(both x86/x64) with encryption support
 
 
 # Sample Scene - [Android]
