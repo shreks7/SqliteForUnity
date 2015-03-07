@@ -10,7 +10,7 @@ Download Unity Packages - [Unity 5](https://github.com/shreks7/SqliteForUnity3D/
 - SqliteForUnity3D provides sqlite support for Unity3D (5.0 & 4.6 Pro) with encryption
 - Download project folders to try out the sample scenes [Unity 5](https://github.com/shreks7/SqliteForUnity3D/tree/master/SqliteForUnity3D-Unity5Project),[Unity 4.6 Pro](https://github.com/shreks7/SqliteForUnity3D/tree/master/SqliteForUnity3D_4_6_Pro)
 - Support for x86/x64/Android
-- Plugins folder contains SqliteForUnity3D.dll,libsqlite3.so(for Android),sqlite.dll(both x86/x64) with encryption support
+- Plugins folder contains SqliteForUnity3D.dll,libsqlite3.so(for Android),sqlite.dll(both x8enc6/x64) with encryption support
 
 
 # Sample Scene - [Android]
@@ -63,7 +63,7 @@ SqliteForUnity3D is a fork of https://github.com/codecoding/SQLite4Unity3d by [@
 The encryption is based on AES similiar to the one used by https://github.com/rindeal/SQLite3-Encryption (Infact you can use sqlite3.dll by @rindeal too).
 
 **Android Encryption**
-For Android I compiled the sqlite3 src with the encrypton from @rindeal for both armeabi & x86 platform. I have included the source [here](https://github.com/shreks7/AndroidSqlite3Encrypted).
+For Android I compiled the sqlite3 src with the encryption from @rindeal for both armeabi & x86 platform. I have included the source [here](https://github.com/shreks7/AndroidSqlite3Encrypted).
 
 #TODO
 1. To add support for Windows Phone 8.1/8
