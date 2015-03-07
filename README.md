@@ -19,7 +19,7 @@ Download Unity Packages - [Unity 5](https://github.com/shreks7/SqliteForUnity3D/
 ![alt tag](https://root2games.appspot.com/file/git/sqliteC.png)
 
 # Usage
-Usage is similiar to sqlite-net. Reiterating it here -
+Usage is similiar to sqlite-net & SQLite4Unity3d. Reiterating it here -
 ```
 using UnityEngine;
 using System.Collections;
