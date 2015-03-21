@@ -1,13 +1,13 @@
 # SqliteForUnity3D
-Sqlite3 for Unity3d with AES encryption
+Sqlite3 for Unity with AES encryption
 
-After trying out alot of sqlite3 libs/plugins for Unity3D, I couldn't find any that supported encryption, was free and was easy to use. However there were some good ones out there that I forked and added encryption support to it.
+After trying out alot of sqlite3 libs/plugins for Unity, I couldn't find any that supported encryption, was free and was easy to use. However there were some good ones out there that I forked and added encryption support to it.
 
 # Can't Wait ?
 Download Unity Packages - [Unity 5](https://github.com/shreks7/SqliteForUnity3D/blob/master/UnityPackages/SqliteForUnity3D.unitypackage) | [Unity 4.6 Pro](https://github.com/shreks7/SqliteForUnity3D/blob/master/UnityPackages/Sqlite3ForUnity3D46.unitypackage)
 
 # Quick Facts: 
-- SqliteForUnity3D provides sqlite support for Unity3D (5.0 & 4.6 Pro) with encryption
+- SqliteForUnity provides sqlite support for Unity3D (5.0 & 4.6 Pro) with encryption
 - Download project folders to try out the sample scenes [Unity 5](https://github.com/shreks7/SqliteForUnity3D/tree/master/SqliteForUnity3D-Unity5Project),[Unity 4.6 Pro](https://github.com/shreks7/SqliteForUnity3D/tree/master/SqliteForUnity3D_4_6_Pro)
 - Support for x86/x64/Android
 - Plugins folder contains SqliteForUnity3D.dll,libsqlite3.so(for Android),sqlite.dll(both x8enc6/x64) with encryption support
@@ -56,8 +56,8 @@ _connection.SetDbKey(key);
 _connection.Key(key);
 ```
 
-# SqliteForUnity3D Source
-SqliteForUnity3D is a fork of https://github.com/codecoding/SQLite4Unity3d by [@CodeCoding](https://github.com/codecoding). A wrapper around the great c# client for sqlite - **[sqlite-net](https://github.com/praeclarum/sqlite-net)** by @praeclarum
+# SqliteForUnity Source
+SqliteForUnity is a fork of https://github.com/codecoding/SQLite4Unity3d by [@CodeCoding](https://github.com/codecoding). A wrapper around the great c# client for sqlite - **[sqlite-net](https://github.com/praeclarum/sqlite-net)** by @praeclarum
 
 **x86/x64 Encryption**
 The encryption is based on AES similiar to the one used by https://github.com/rindeal/SQLite3-Encryption (Infact you can use sqlite3.dll by @rindeal too).
